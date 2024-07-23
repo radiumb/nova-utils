@@ -6987,6 +6987,39 @@
         "addressPrefix": 42
     },
     {
+        "chainId": "77afd6190f1554ad45fd0d31aee62aacc33c6db0ea801129acb813f913e0764f",
+        "name": "Paseo Testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "PAS",
+                "precision": 10,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg",
+                "staking": [
+                    "relaychain",
+                    "nomination-pools"
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.ibp.network/paseo",
+                "name": "IBP-GeoDNS1"
+            },
+            {
+                "url": "wss://rpc.dotters.network/paseo",
+                "name": "IBP-GeoDNS2"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
+        "addressPrefix": 42,
+        "options": [
+            "testnet",
+            "crowdloans",
+            "proxy"
+        ]
+    },
+    {
         "chainId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
         "name": "Rococo Testnet",
         "assets": [
@@ -7526,63 +7559,6 @@
         "options": [
             "testnet"
         ]
-    },
-    {
-        "chainId": "f460fe68f5f34ced6b18d8e4612410e334c55521bf27714cdca654b63b685ae6",
-        "name": "Novasama Testnet - Kusama",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "KSM",
-                "precision": 12,
-                "staking": [
-                    "relaychain",
-                    "nomination-pools"
-                ],
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://novasama.co",
-                "name": "Development node"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/novasama_gov2_testnet.json",
-            "overridesCommon": true
-        },
-        "externalApi": {
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-test-kusama"
-                }
-            ],
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-test-kusama"
-                }
-            ],
-            "governance-delegations": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-gov-test"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Governance2_Testnet.svg",
-        "addressPrefix": 2,
-        "options": [
-            "testnet",
-            "governance",
-            "governance-v1"
-        ],
-        "additional": {
-            "themeColor": "#1F78FF",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains"
-        }
     },
     {
         "chainId": "6f0f071506de39058fe9a95bbca983ac0e9c5da3443909574e95d52eb078d348",
